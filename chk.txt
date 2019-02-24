@@ -1,0 +1,7 @@
+app.get('/',(req,res)=>{
+    Student.find({})
+    .then(s=>{
+        res.send(s);
+    })
+    .catch(err =>{console.log(err)})
+});
